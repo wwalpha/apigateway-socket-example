@@ -9,7 +9,6 @@
     "prebuild": "rimraf dist",
     "build": "tsc",
     "deploy": "yarn build && cd terraform && yarn start",
-    "deleteapi": "aws apigatewayv2 delete-api --api-id vhh4g615c0",
     "connect": "wscat -c wss://vez8mtffgc.execute-api.ap-northeast-1.amazonaws.com/v1",
     "test": "ts-node test/client"
   },

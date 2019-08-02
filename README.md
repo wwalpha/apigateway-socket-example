@@ -1,5 +1,12 @@
 # apigateway-socket-example
 
+## Installation
+
+```
+yarn install
+yarn deploy
+```
+
 ## Create API Gateway WebSocket
 
 ### Create API
