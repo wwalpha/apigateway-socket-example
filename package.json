@@ -1,0 +1,29 @@
+{
+  "name": "apigateway-socket-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wwalpha/apigateway-socket-example.git",
+  "author": "wwalpha <wwalpha@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "deploy": "yarn build && cd terraform && yarn start",
+    "deleteapi": "aws apigatewayv2 delete-api --api-id vhh4g615c0",
+    "connect": "wscat -c wss://vez8mtffgc.execute-api.ap-northeast-1.amazonaws.com/v1",
+    "test": "ts-node test/client"
+  },
+  "devDependencies": {
+    "@types/ws": "^6.0.1",
+    "rimraf": "^2.6.3",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3",
+    "ws": "^7.1.1"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.31",
+    "aws-lambda": "^0.1.2",
+    "aws-sdk": "^2.503.0"
+  }
+}

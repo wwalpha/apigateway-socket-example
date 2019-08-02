@@ -1,0 +1,5 @@
+/node_modules
+/terraform/.terraform
+/dist
+/terraform/terraform.tfstate.backup
+/terraform/terraform.tfstate
