@@ -6,6 +6,7 @@
   "scripts": {
     "plan": "terraform plan",
     "prestart": "terraform init",
-    "start": "terraform apply -auto-approve -var api_id=vez8mtffgc"
+    "start": "terraform apply -auto-approve -var api_id=vez8mtffgc",
+    "destroy": "terraform destroy -auto-approve -var api_id=vez8mtffgc"
   }
 }
