@@ -43,10 +43,11 @@ aws apigatewayv2 create-integration --api-id hqep9lsfa9 --integration-type AWS -
 ```
 
 ## Test
-
 ```sh
 yarn test
+```
 
+```sh
 Server Connected...
 I will send hello to server.
 Message from server: Hi Client
