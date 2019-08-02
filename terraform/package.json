@@ -1,0 +1,11 @@
+{
+  "name": "terraform",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "plan": "terraform plan",
+    "prestart": "terraform init",
+    "start": "terraform apply -auto-approve -var api_id=vez8mtffgc"
+  }
+}
