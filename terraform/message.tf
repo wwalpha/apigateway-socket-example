@@ -16,7 +16,7 @@ module "message" {
   publish            = false
   function_name      = "websocket-message"
   handler            = "message.handler"
-  runtime            = "nodejs10.x"
+  runtime            = "nodejs14.x"
   role_name          = "WebSocketMessageRole"
   timeout            = 5
   filename           = "${data.archive_file.message.output_path}"
