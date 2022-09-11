@@ -16,7 +16,7 @@ module "connect" {
   publish            = false
   function_name      = "websocket-connect"
   handler            = "connect.handler"
-  runtime            = "nodejs10.x"
+  runtime            = "nodejs14.x"
   role_name          = "WebSocketConnectRole"
   filename           = "${data.archive_file.connect.output_path}"
   source_code_hash   = "${filebase64sha256(data.archive_file.connect.output_path)}"
