@@ -16,7 +16,7 @@ module "disconnect" {
   publish            = false
   function_name      = "websocket-disconnect"
   handler            = "disconnect.handler"
-  runtime            = "nodejs10.x"
+  runtime            = "nodejs14.x"
   role_name          = "WebSocketDisconnectRole"
   timeout            = 5
   filename           = "${data.archive_file.disconnect.output_path}"
